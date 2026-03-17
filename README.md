@@ -8,11 +8,11 @@ This project builds a machine learning model to detect fraudulent credit card tr
 
 ## 🛠️ Technologies Used
 
-Python 3.x**
-Scikit-learn** (Random Forest, preprocessing, metrics)
-Pandas & NumPy** (data manipulation)
-Imbalanced-learn (SMOTE)** for handling class imbalance
-Matplotlib & Seaborn** for visualization
+*Python 3.x
+*Scikit-learn (Random Forest, preprocessing, metrics)
+*Pandas & NumPy (data manipulation)
+*Imbalanced-learn (SMOTE)** for handling class imbalance
+*Matplotlib & Seaborn** for visualization
 
 ---
 
@@ -32,7 +32,7 @@ Matplotlib & Seaborn** for visualization
 | --------- | -------- |
 | Accuracy  | 99.35%   |
 | Precision | 94.74%   |
-| Recall    | 60.00% ⭐ |
+| Recall    | 60.00%   |
 | F1 Score  | 73.47%   |
 
 > **Note:** Recall is critical in fraud detection because missing fraudulent transactions can be very costly, even if the overall accuracy is high.

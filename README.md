@@ -76,6 +76,7 @@ The model successfully identifies fraudulent transactions while maintaining stro
 * Cloud Deployment
 
 ## Author
+DEMO LINK:https://creditcardfraud-detection-5wkfuzithcuygwydnkjvin.streamlit.app/
 
 Srija Kothakonda
 B.Tech (CS & AI)

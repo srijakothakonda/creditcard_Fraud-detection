@@ -34,7 +34,7 @@ def train_model(data):
     )
     smote = SMOTE(random_state=42)
     X_train_smote, y_train_smote = smote.fit_resample(X_train, y_train)
-    model = ExtraTreesClassifier(n_estimators=20, random_state=42, n_jobs=-1)
+   model = ExtraTreesClassifier(n_estimators=20, random_state=42, n_jobs=1)
     model.fit(X_train_smote, y_train_smote)
     return model, X_test, y_test, X
 

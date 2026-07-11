@@ -26,16 +26,26 @@ def load_data():
 def train_model(data):
     X = data.drop('Class', axis=1)
     y = data['Class']
+
     scaler = StandardScaler()
     X['Time'] = scaler.fit_transform(X[['Time']])
     X['Amount'] = scaler.fit_transform(X[['Amount']])
+
     X_train, X_test, y_train, y_test = train_test_split(
         X, y, test_size=0.2, random_state=42, stratify=y
     )
+
     smote = SMOTE(random_state=42)
     X_train_smote, y_train_smote = smote.fit_resample(X_train, y_train)
-   model = ExtraTreesClassifier(n_estimators=20, random_state=42, n_jobs=1)
+
+    model = ExtraTreesClassifier(
+        n_estimators=20,
+        random_state=42,
+        n_jobs=1
+    )
+
     model.fit(X_train_smote, y_train_smote)
+
     return model, X_test, y_test, X
 
 # Load data
